@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0px;
+
+        }
+
+        .icon {
+            width: 26px;
+            clip-path: circle(50% at 50% 51%);
+        }
+
+        .navbar li {
+            list-style: none;
+            display: inline;
+        }
+
+        .navbar ul {
+            margin-top: 0px;
+            overflow: auto;
+            padding: 0px 5px;
+        }
+
+        .navbar a {
+            padding: 10px;
+            font-size: 12px;
+            text-decoration: none;
+            float: left;
+            text-align: center;
+            color: blanchedalmond;
+        }
+
+        .navbar {
+            background-color: rgb(33 30 66);
+        }
+
+        .navbar a:hover {
+            color: crimson;
+        }
+
+        input {
+            width: 120px;
+            height: 11px;
+            margin-left: 130px;
+            margin-top: 13px;
+            margin-bottom: auto;
+            border-radius: 5px;
+
+            border: none;
+        }
+
+        .navbutton {
+            background-color: #dc3545;
+            ;
+            border: none;
+            border-radius: 4px;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 13px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            color: rgb(245, 115, 115);
+        }
+
+        .section1 {
+            background-color: rgb(212 211 211 / 32%);
+            margin: 5px;
+            padding: 10px;
+        }
+
+        #headimg {
+            width: 90px;
+            clip-path: circle(50% at 50% 51%);
+            margin-left: 43%;
+            margin-right: 40%;
+
+        }
+
+        .scroll {
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align: center;
+        }
+
+        #intro-text {
+            font-size: 12px;
+            text-align: center;
+            padding: 0px 30px;
+            margin: 5px 15px;
+            color: grey;
+        }
+
+        .buttonhead {
+            display: flex;
+            align-items: center;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            vertical-align: auto;
+        }
+
+        .buttonhead a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+
+        .buttonhead a:hover {
+            color: black;
+        }
+
+        #button1 {
+            background-color: rgba(204, 12, 194, 0.774);
+            border: none;
+            font-size: 13px;
+            width: 70px;
+            border-radius: .25rem;
+            text-align: center;
+            padding: 4px;
+            box-sizing: border-box;
+            margin: 5px 2px;
+        }
+
+        #button2 {
+            background-color: rgba(12, 70, 243, 0.842);
+            border: none;
+            width: 100px;
+            border-radius: .25rem;
+            text-align: center;
+            padding: 4px;
+            box-sizing: border-box;
+            font-size: 13px;
+            margin: 5px 2px;
+        }
+
+        #button3 {
+            background-color: rgb(57, 216, 42);
+            border: none;
+            width: 100px;
+            border-radius: .25rem;
+            text-align: center;
+            padding: 4px;
+            box-sizing: border-box;
+            font-size: 13px;
+            margin: 5px 2px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            align-content: center;
+            flex-wrap: wrap;
+            margin-top: 28px;
+
+        }
+
+        .box {
+            width: 110px;
+            height: 150px;
+            padding: 10px;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+            margin-left: 5px;
+        }
+
+        .container h4 {
+            text-align: center;
+            box-sizing: border-box;
+            margin: 0%;
+            font-family: monospace;
+        }
+
+        .material {
+            border: .25px solid rgb(156, 153, 153);
+            padding: 10px;
+            border-radius: .20rem;
+            flex-basis: 120px;
+            height: 308px;
+        }
+
+        .divspan {
+            font-size: 10px;
+            line-height: 20%;
+            color: rgb(111 28 28);
+            padding: 0px;
+            margin: 0px;
+            margin-bottom: 5px;
+            margin-bottom: 5px;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .divbutton {
+            display: flex;
+            margin-top: 10px;
+            align-items: center;
+            background-color: #0030ff;
+            border: none;
+            text-align: center;
+            padding-left: 26px;
+            border-radius: .3rem;
+            font-weight: 500;
+            font-size: 10px;
+            width: 100%;
+            transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+        }
+
+        .divbutton a {
+            text-decoration: none;
+            color: white;
+            font-family: 'Ubuntu Condensed', sans-serif;
+        }
+
+        .divbutton a:hover {
+            color: rgb(43, 39, 39)
+        }
+
+        #but2 {
+            padding-left: 36px;
+        }
+
+        #but3 {
+            padding-left: 34px;
+        }
+
+        .footer {
+            margin-top: 5px;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            background-color: rgb(78, 43, 43);
+        }
+
+        .footerp {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 8px;
+            color: cornsilk;
+        }
+        .divfooter{
+            display: flex;
+            flex-direction: row;
+        }
+        footer a{
+            text-decoration: none;
+            color: rgb(211, 194, 194);
+            font-size: 9px;
+        }
+        footer a:hover{
+            color:grey
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <ul>
+            <li>
+                <a href="#"><img class="icon" src="icon.jpg" alt=""></a>
+            </li>
+            <li>
+                <a href="#"> Home</a>
+            </li>
+            <li>
+                <a href="#">Video</a>
+            </li>
+            <li>
+                <a href="#">Courses</a>
+            </li>
+            <li>
+                <a href="#">Login/Signup</a>
+            </li>
+            <li>
+                <input type="text" name="search" placeholder="Search">
+            </li>
+            <li>
+                <button class="navbutton">Search</button>
+            </li>
+            <li>
+                <button class="navbutton"> Login</button>
+                <button class="navbutton">Signup</button>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section class="section1">
+            <img id="headimg" src="icon.jpg" alt="">
+            <div class="scroll">
+                <marquee behavior="scroll" direction="left">Web Development, Machine Learning, Python</marquee>
+            </div>
+            <p id="intro-text">Confused on which course to take? I have got you covered. Browse courses and find out the
+                best course for you. Its free! <br>
+                Code With Harry is my attempt to teach basics and those coding techniques to people in short time which
+                took me ages to learn.</p>
+            <div class="buttonhead">
+                <button id="button1"><a href="#">Blogs</a> </button>
+                <button id="button2"><a href="#">Video Tutorials</a></button>
+                <button id="button3"><a href="#">Contact Me</a></button>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="material">
+                    <img src="learn to code.jpg" alt="" class="box" id="img1">
+                    <h4>Free Courses</h4>
+                    <span class="divspan">
+                        Get your programming career started with these free video courses. Source code is available with
+                        all the
+                        videos for your better experience. <br> <br>
+                    </span>
+                    <button class="divbutton"><a href="#"> Browse Videos</a></button>
+                </div>
+                <div class="material">
+                    <img src="lamda.png" alt="" class="box" id="img2">
+                    <h4>Coding Articles</h4>
+                    <span class="divspan">
+                        Some of the latest coding information compiled as coding articles. Keep your programming
+                        knowledge up to
+                        date with our coding articles.
+                    </span>
+                    <button class="divbutton" id="but2"><a href="#"> Go to Blog</a></button>
+                </div>
+                <div class="material">
+                    <img src="pyhton.jpg" alt="" class="box" id="img3">
+                    <h4>Contact Me</h4>
+                    <span class="divspan">
+                        Learn programming from our free courses. Examples are available with these tutorials. You can
+                        contact me
+                        for any doubt and I will get back to you!
+                    </span>
+                    <button class="divbutton" id="but3"><a href="#">Contact Me</a> </button>
+                    </div4>
+        </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <p class="footerp">© 2020-2021 CodeWithHarry.com</p>
+        <div class="divfooter">
+        <a href="http://facebook.com">Facebook &nbsp;||</a> &nbsp;
+        <a href="http://instagram.com">Instagram &nbsp;||</a> &nbsp;
+        <a href="https://in.linkedin.com/">Linked-In </a>
+        </div>
+    </footer>
+</body>
+
+</html>
